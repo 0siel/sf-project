@@ -7,7 +7,15 @@ function Rooms() {
   return (
     <div className="home-section">
       <h2>Rooms</h2>
-      <div className="rooms">
+      <div
+        className="rooms"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <RoomComponent />
         <RoomComponent />
         <RoomComponent />

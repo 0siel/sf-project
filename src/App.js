@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./components/Home";
 import Reservation from "./components/Reservation";
+import "./App.css"; // Import the App.css file
 
 function App() {
   return (
     <Router>
-      <div style={{ textAlign: "center", paddingTop: "50px" }}>
+      <div style={{ textAlign: "center" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reservation" element={<Reservation />} />
