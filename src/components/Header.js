@@ -20,9 +20,10 @@ export default function Header() {
       <h1
         style={{
           color: "#A79C69",
-          fontSize: "24px",
+          fontSize: "44px",
           fontWeight: "bold",
           margin: "0",
+          fontStyle: "italic",
         }}
       >
         San Felipe Hotel
@@ -32,9 +33,6 @@ export default function Header() {
           display: "flex", // Align list items horizontally
           listStyle: "none", // Remove bullet points
           margin: "0",
-          fontStyle: "italic",
-          //Remoove underline from links
-          textDecoration: "none",
           padding: "0",
           paddingRight: "20px",
           fontFamily: "Cormorant Garamond, serif",

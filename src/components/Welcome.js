@@ -9,12 +9,13 @@ export default function Welcome() {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-        height: "70vh",
+        height: "700px",
         backgroundColor: "#43523A",
-        margin: "0 2vw 0 2vw",
+        margin: "0 8px 0 8px",
         borderRadius: "3px",
-        paddingLeft: "1vw",
-        paddingRight: "1vw",
+        paddingLeft: "5px",
+        paddingRight: "5px",
+        width: "auto",
       }}
     >
       <div style={{ width: "70%" }}>
