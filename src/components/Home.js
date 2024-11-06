@@ -14,8 +14,8 @@ function Home() {
       <Header />
       <Welcome />
       <Rooms />
+      <Reviews />
       <Events />
-      <About />
 
       <Footer />
     </div>

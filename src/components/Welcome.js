@@ -17,7 +17,7 @@ export default function Welcome() {
         paddingRight: "1vw",
       }}
     >
-      <div style={{ width: "50%" }}>
+      <div style={{ width: "70%" }}>
         <h2
           style={{
             display: "flex",

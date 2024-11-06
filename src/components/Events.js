@@ -3,8 +3,8 @@ import Event from "./EventComponent";
 
 export default function Events() {
   return (
-    <div className="home-section">
-      <h2>Events</h2>
+    <div className="home-section" id="eventos">
+      <h2>Próximos Eventos</h2>
       <div
         className="events"
         style={{

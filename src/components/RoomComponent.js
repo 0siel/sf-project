@@ -2,7 +2,7 @@ import React from "react";
 
 // Room component, returns a room card with the room details.
 
-function RoomComponent() {
+function RoomComponent(room) {
   return (
     <div
       className="room"
@@ -15,16 +15,21 @@ function RoomComponent() {
         margin: "10px",
         border: "1px solid #ccc",
         borderRadius: "5px",
-        width: "200px",
+        width: "30%",
       }}
     >
       <img
-        src="https://via.placeholder.com/150"
-        alt="Room"
+        src={room.images[0]}
+        alt={room.name}
         className="room-image"
+        style={{
+          width: "100%",
+          height: "auto",
+          borderRadius: "5px",
+        }}
       />
-      <h3>Room Name</h3>
-      <p>Room Description</p>
+      <h3>{room.roomName}</h3>
+      <p>{room.type}</p>
       <p>Price: $100</p>
       <button>Book Now</button>
     </div>

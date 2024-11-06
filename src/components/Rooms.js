@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import RoomComponent from "./RoomComponent";
 
 // Rooms component, returns the rooms section of the home page. The component makes a call to the API to get the rooms data, and use the Room component to display the rooms.
 
 function Rooms() {
+  const [rooms, setRooms] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://hotel-system-cs-410309b43a2b.herokuapp.com/rooms")
+      .then((response) => {
+        setRooms(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching room data:", error);
+      });
+  }, []);
+
   return (
     <div className="home-section">
-      <h2>Rooms</h2>
+      <h2>Habitaciones</h2>
       <div
         className="rooms"
         style={{
@@ -16,9 +30,9 @@ function Rooms() {
           justifyContent: "center",
         }}
       >
-        <RoomComponent />
-        <RoomComponent />
-        <RoomComponent />
+        {rooms.map((room) => (
+          <RoomComponent key={room.roomId} room={room} />
+        ))}
       </div>
     </div>
   );
