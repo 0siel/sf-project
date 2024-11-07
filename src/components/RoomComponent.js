@@ -2,22 +2,9 @@ import React from "react";
 
 // Room component, returns a room card with the room details.
 
-function RoomComponent(room) {
+function RoomComponent({ room }) {
   return (
-    <div
-      className="room"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "10px",
-        margin: "10px",
-        border: "1px solid #ccc",
-        borderRadius: "5px",
-        width: "30%",
-      }}
-    >
+    <div className="room" style={{}}>
       <img
         src={room.images[0]}
         alt={room.name}

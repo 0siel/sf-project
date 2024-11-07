@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import RoomComponent from "./RoomComponent";
 
-// Rooms component, returns the rooms section of the home page. The component makes a call to the API to get the rooms data, and use the Room component to display the rooms.
+// Rooms comp onent, returns the rooms section of the home page. The component makes a call to the API to get the rooms data, and use the Room component to display the rooms.
 
 function Rooms() {
   const [rooms, setRooms] = useState([]);
@@ -30,9 +30,9 @@ function Rooms() {
           justifyContent: "center",
         }}
       >
-        {rooms.map((room) => (
-          <RoomComponent key={room.roomId} room={room} />
-        ))}
+        {rooms.map((room) => {
+          return <RoomComponent key={room.roomId} room={room} />;
+        })}
       </div>
     </div>
   );
