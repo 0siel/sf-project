@@ -21,15 +21,13 @@ function Rooms() {
   return (
     <div className="home-section">
       <h2>Habitaciones</h2>
-      <div
-        className="rooms"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div className="rooms">
+        {rooms.map((room) => {
+          return <RoomComponent key={room.roomId} room={room} />;
+        })}
+        {rooms.map((room) => {
+          return <RoomComponent key={room.roomId} room={room} />;
+        })}
         {rooms.map((room) => {
           return <RoomComponent key={room.roomId} room={room} />;
         })}
