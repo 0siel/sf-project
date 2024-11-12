@@ -8,9 +8,9 @@ export default function Footer() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        margin: "10px",
+        margin: "0px",
         border: "1px solid #ccc",
-        borderRadius: "5px",
+        borderRadius: "0px",
         width: "100%",
         backgroundColor: "#43523a",
       }}

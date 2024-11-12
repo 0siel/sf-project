@@ -9,9 +9,11 @@ export default function Reviews() {
           <img
             src="https://via.placeholder.com/150"
             alt="reviewer"
-            style={{ borderRadius: "50%", width: "150px", height: "150px" }}
+            style={{ borderRadius: "50%", width: "150px" }}
           />
-          <strong>John Doe</strong>
+          <p>
+            <b>John Doe</b>
+          </p>
           <p>
             "El hotel es muy bonito y la atención es excelente. Lo recomiendo"
           </p>
@@ -22,7 +24,9 @@ export default function Reviews() {
             alt="reviewer"
             style={{ borderRadius: "50%", width: "150px", height: "150px" }}
           />
-          <strong>John Doe</strong>
+          <p>
+            <b>John Doe</b>
+          </p>
           <p>
             "El hotel es muy bonito y la atención es excelente. Lo recomiendo"
           </p>
@@ -33,7 +37,10 @@ export default function Reviews() {
             alt="reviewer"
             style={{ borderRadius: "50%", width: "150px", height: "150px" }}
           />
-          <strong>John Doe</strong>
+          <b>
+            <p>John Doe</p>
+          </b>
+
           <p>
             "El hotel es muy bonito y la atención es excelente. Lo recomiendo"
           </p>

@@ -15,7 +15,8 @@ function EventComponent() {
         margin: "10px",
         border: "1px solid #ccc",
         borderRadius: "5px",
-        width: "30%",
+        minWidth: "300px",
+        maxWidth: "400px",
       }}
     >
       <img
@@ -37,13 +38,16 @@ function EventComponent() {
           width: "100%",
         }}
       >
-        <p>Event Date</p>
-        <p>Event Time</p>
+        <p>Dic 11, 2024</p>
+        <p>20:00</p>
       </div>
 
-      <p>Event Location</p>
-      <h3>Event Title</h3>
-      <p>Event Description</p>
+      <p>Hotel San Felipe</p>
+      <h3>Cena especial</h3>
+      <p>
+        Ven a disfrutar de una cena inspirada en la gastronomía local. ¡No te lo
+        pierdas!
+      </p>
     </div>
   );
 }
