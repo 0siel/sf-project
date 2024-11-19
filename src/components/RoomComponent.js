@@ -15,9 +15,9 @@ function RoomComponent({ room }) {
           borderRadius: "5px",
         }}
       />
-      <h3>{room.roomName}</h3>
-      <p>{room.type}</p>
-      <p>Price: $100</p>
+      <h3>{room.roomtype}</h3>
+      <p>{room.description}</p>
+      <p>${room.price}</p>
       <button>Book Now</button>
     </div>
   );

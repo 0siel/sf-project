@@ -1,33 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        margin: "0px",
-        border: "1px solid #ccc",
-        borderRadius: "0px",
-        width: "100%",
-        backgroundColor: "#43523a",
-      }}
-    >
+    <footer className="footer">
       <div className="links">
-        <a href="/">Home</a>
-        <a href="/rooms">Rooms</a>
-        <a href="/contact">Contact</a>
+        <Link className="footer-link" to="/">
+          Inicio
+        </Link>
+        <Link className="footer-link" to="/reservar">
+          Reservar
+        </Link>
+        <a className="footer-link" href="#inicio">
+          Inicio
+        </a>
       </div>
-      <div
-        className="social-media"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
+      <div className="social-media">
         <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <img
             src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"

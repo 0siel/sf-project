@@ -8,12 +8,8 @@
   padding: 10px 30px;
 }
 
-.navbar h1 {
-  color: #a79c69;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin: 0;
-  font-style: italic;
+.navbar .logo {
+  height: 60px;
 }
 
 .navbar ul {
@@ -36,28 +32,36 @@
 
 .welcome {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 700px;
   background-color: #43523a;
-  margin: 0 0px;
   border-radius: 3px;
-  padding: 0px;
 }
 
-.welcome h2,
-.welcome p {
-  color: #ebeff0;
+.welcome-text {
   text-align: center;
-  font-size: 2.5em;
-  padding: 0 20px;
+  color: #ebeff0;
+  margin-bottom: 20px;
 }
 
-.welcome img {
-  width: 50%;
+.welcome h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.welcome p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.welcome-slide {
   height: 80%;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: opacity 5s ease-in-out;
 }
 
 .rooms {
@@ -66,7 +70,7 @@
   align-items: left;
   justify-content: left;
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: wrap;
   gap: 10px;
 }
 
@@ -125,19 +129,51 @@
   gap: 100px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.footer {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #43523a;
+  color: #ebeff0;
+  padding: 10px;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .links a {
+  text-decoration: none;
+  color: #ebeff0;
+}
+
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: left;
+    padding: 0;
+    height: auto;
   }
 
   .navbar ul {
-    visibility: hidden;
+    visibility: hidden; /* Hides the menu */
   }
 
   .navbar li {
@@ -147,28 +183,35 @@
   .welcome {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    /* Adjust padding for better fit on small screens */
   }
 
   .welcome h2 {
-    font-size: 2em;
+    font-size: 2em; /* Reduce font size for smaller screens */
   }
 
   .welcome p {
-    font-size: 1.8em;
+    font-size: 1.5em; /* Adjusted for better readability */
+    padding: 5px;
   }
 
-  .welcome img {
-    width: 80%;
-    margin-top: 20px;
+  .welcome-slide {
+    width: 100%; /* Makes the slideshow responsive */
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    height: 70px; /* Adjust logo size */
+    margin-top: 10px;
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1.2em; /* General paragraph font size for mobile */
   }
 
   .room {
-    width: 100%;
+    width: 100%; /* Ensures full width for the Room component on mobile */
   }
 }
 

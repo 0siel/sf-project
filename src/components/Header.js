@@ -4,6 +4,7 @@ export default function Header() {
   return (
     <nav
       className="navbar"
+      id="inicio"
       style={{
         display: "flex", // Flexbox to align elements horizontally
         alignItems: "center", // Vertically center the items
@@ -11,23 +12,17 @@ export default function Header() {
         backgroundColor: "#EBEFF0",
         //padding: "10px 20px", // Padding for spacing
         paddingLeft: "30px",
-        //paddingRight: "20px",
+
         paddingTop: "10px",
         paddingBottom: "10px",
         width: "auto",
       }}
     >
-      <h1
-        style={{
-          color: "#A79C69",
-          fontSize: "44px",
-          fontWeight: "bold",
-          margin: "0",
-          fontStyle: "italic",
-        }}
-      >
-        San Felipe Hotel
-      </h1>
+      <img
+        className="logo"
+        src={`${process.env.PUBLIC_URL}/GoldLogo.png`}
+        alt="Hotel"
+      />
       <ul
         style={{
           display: "flex", // Align list items horizontally

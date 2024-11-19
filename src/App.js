@@ -2,11 +2,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import AuthPage from "./components/Authpage";
 import Home from "./components/Home";
 import Reservation from "./components/Reservation";
 import "./App.css"; // Import the App.css file
-
-
 
 function App() {
   return (
@@ -14,7 +13,8 @@ function App() {
       <div style={{ textAlign: "center" }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reservation" element={<Reservation />} />
+          <Route path="/reservar" element={<Reservation />} />
+          <Route path="/auth" element={<AuthPage />} />
         </Routes>
       </div>
     </Router>
