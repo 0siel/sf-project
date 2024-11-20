@@ -17,8 +17,6 @@ function RoomComponent({ room }) {
       />
       <h3>{room.roomtype}</h3>
       <p>{room.description}</p>
-      <p>${room.price}</p>
-      <button>Book Now</button>
     </div>
   );
 }

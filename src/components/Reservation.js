@@ -78,7 +78,7 @@ function Reservation() {
   }, []);
 
   return (
-    <div className="home-section">
+    <div className={"home-section reservation-page"}>
       <Header />
       <h2>Reservar</h2>
 
@@ -101,7 +101,7 @@ function Reservation() {
           );
         })}
       </div>
-      <form onSubmit={handleSendReservation}>
+      <form className="reservation-form" onSubmit={handleSendReservation}>
         <h3>
           {selectedRoom
             ? `Reservando: ${selectedRoom.roomtype}`
