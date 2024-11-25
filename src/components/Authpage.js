@@ -74,13 +74,12 @@ const Authpage = () => {
 
   return (
     <div style={{ maxWidth: "400px", margin: "0 auto" }}>
-      <h1>Login</h1>
-      <h2>{isSignup ? "Sign Up" : "Login"}</h2>
+      <h2>{isSignup ? "Registrarse" : "Ingresar"}</h2>
       <form onSubmit={handleSubmit}>
         {isSignup && (
           <>
             <div>
-              <label>Name:</label>
+              <label>Usuario:</label>
               <input
                 type="text"
                 name="name"
@@ -90,7 +89,7 @@ const Authpage = () => {
               />
             </div>
             <div>
-              <label>Phone:</label>
+              <label>Teléfono:</label>
               <input
                 type="text"
                 name="phone"
@@ -112,7 +111,7 @@ const Authpage = () => {
           />
         </div>
         <div>
-          <label>Password:</label>
+          <label>Contraseña:</label>
           <input
             type="password"
             name="password"
@@ -121,10 +120,10 @@ const Authpage = () => {
             required
           />
         </div>
-        <button type="submit">{isSignup ? "Sign Up" : "Login"}</button>
+        <button type="submit">{isSignup ? "Registrarse" : "Ingresar"}</button>
       </form>
       <p>
-        {isSignup ? "Already have an account? " : "Don't have an account? "}
+        {isSignup ? "Ya tienes una cuenta " : "No tienes una cuenta? "}
         <button
           type="button"
           onClick={() => setIsSignup(!isSignup)}
@@ -135,7 +134,7 @@ const Authpage = () => {
             cursor: "pointer",
           }}
         >
-          {isSignup ? "Login" : "Sign Up"}
+          {isSignup ? "Ingresar" : "Registrarme"}
         </button>
       </p>
     </div>
